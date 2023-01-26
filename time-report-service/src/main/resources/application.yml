@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: time-report-service
+  data:
+    mongodb:
+      database: time-report-service
+      port: 27017
+      auto-index-creation: true
+server:
+  port: 8201
+authentication:
+  tokenSecret: myTokenSecret
+  tokenExpirationMsec: 3600000
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+    fetch-registry: true
+    register-with-eureka: true
+
